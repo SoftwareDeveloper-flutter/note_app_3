@@ -1,4 +1,6 @@
 import "package:flutter/material.dart";
+import "package:note_app_3/screens/home_screen.dart";
+import 'package:note_app_3/utils/app_constant.dart';
 void main(){
   runApp(const MyApp());
 }
@@ -21,7 +23,7 @@ class SplashScreen extends StatelessWidget{
 Widget build(BuildContext context){
   return  Scaffold(
     
-         backgroundColor:const Color(0xB88A9DFF),
+         backgroundColor:AppConstant.appBackgroundColor,
          body:Container(
           
            padding: const EdgeInsets.only(top: 50),
@@ -54,7 +56,7 @@ Widget build(BuildContext context){
                       backgroundColor: const Color(0xFFFFC00E)
                        ),
                         onPressed:(){
-
+                  Navigator.push(context,MaterialPageRoute(builder:(context)=>const HomeScreen()));
                         },
                    child:const Text("Create a Note",style:TextStyle(color:Colors.black,  fontWeight: FontWeight.w400))
                      ),
