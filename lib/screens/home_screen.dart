@@ -50,20 +50,64 @@ class HomeScreen extends StatelessWidget{
           children:[
            const SizedBox(width:15),
             Container(
-              width: 150,
+              width: 130,
               height:190,
                decoration: BoxDecoration(
               color:const Color(0xFFA6A6A6),
         borderRadius: BorderRadius.circular(26), 
       ),
+        child: Column(
+
+          children:[
+              Padding(
+      padding: const EdgeInsets.only(top: 16.0,left:90.0), 
+            child:Image.asset('assets/images/phone_icon.png',width:20,height:20),
+              ),
+            const Padding(
+      padding:  EdgeInsets.only(left:10.0), 
+            child: Align(
+        alignment: Alignment.centerLeft,
+         child:Text("2 hours Ago",style:TextStyle(fontSize:14,color:Colors.white))
+            ),
+            ),
+              const Padding(
+      padding:  EdgeInsets.only(top:10.0,left:10.0), 
+            child: Align(
+        alignment: Alignment.centerLeft,
+   
+         child:Text("Mobile App",style:TextStyle(fontSize:20,color:Colors.white,fontWeight:FontWeight.bold)),
+            ),
+            ),
+              const Padding(
+      padding:  EdgeInsets.only(left:10.0), 
+            child: Align(
+        alignment: Alignment.centerLeft,
+   
+         child:Text("UI Design",style:TextStyle(fontSize:20,color:Colors.white,fontWeight:FontWeight.bold)),
+            ),
+            ),
+            const Padding(
+              padding: EdgeInsets.only(top:10.0,left:10.0),
+              child:Align(
+                alignment: Alignment.centerLeft,
+              child:Text("using Figma",style:TextStyle(fontSize:14,color:Color.fromARGB(255, 121, 117, 117),fontWeight:FontWeight.bold)),
+              ),
+            ),
+          ],
+      ),
             ),
              const SizedBox(width:15),
               Container(
-              width: 150,
+              width: 130,
               height:190,
                decoration: BoxDecoration(
               color:const Color(0xFFA6A6A6),
         borderRadius: BorderRadius.circular(26), 
+      ),
+      child:const Column(
+          children:[
+            Text("2 hours Ago",style:TextStyle(fontSize:14,color:Colors.white))
+          ],
       ),
             ),
           ],
