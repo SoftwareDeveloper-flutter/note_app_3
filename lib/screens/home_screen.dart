@@ -161,6 +161,24 @@ class HomeScreen extends StatelessWidget{
           ],
           
         ),
+                Padding(
+          padding: const EdgeInsets.only(top: 10, left: 10),
+          child: Row(
+            children: [
+            const Text("My Tasks",style:TextStyle(fontSize:20,fontWeight:FontWeight.bold)),
+          const Spacer(),
+            FloatingActionButton(
+               onPressed: (){
+                 
+               },
+         
+          backgroundColor: Colors.green,
+           child:Image.asset('assets/images/plus.png',width:30,height:30),
+            ),
+            const SizedBox(width: 10),
+            ],
+          ),
+        )
           ],
           
         ),
