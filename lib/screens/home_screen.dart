@@ -178,7 +178,68 @@ class HomeScreen extends StatelessWidget{
             const SizedBox(width: 10),
             ],
           ),
+        ),
+       const  Padding(
+          padding: EdgeInsets.only(top:10,left:10),
+          child:Row(
+         children:[
+             Text("Today’s Task",style:TextStyle(fontSize:16,fontWeight:FontWeight.bold)),
+               SizedBox(width: 10),
+              Text("Weekly  Task",style:TextStyle(fontSize:16)),
+                SizedBox(width: 10),
+               Text("Monthly Task",style:TextStyle(fontSize:16)),
+         ]
         )
+        ),
+           Padding(
+          padding:const EdgeInsets.only(top:10,left:10),
+          child:Row(
+            children:[
+             Container(
+              width: 300,
+              height:56,
+               decoration: BoxDecoration(
+              color: Colors.white,
+        borderRadius: BorderRadius.circular(10), 
+      ),
+    child: Padding(
+      padding:const EdgeInsets.only(left:10),
+      child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                "Complete Assignment #2",
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(width: 10), 
+              
+              
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 3),
+                
+                decoration: BoxDecoration(
+                  color: Colors.blue, 
+                  borderRadius: BorderRadius.circular(10), 
+                  border: Border.all(color: Colors.blueAccent, width: 2),
+                ),
+                child: const Text(
+                  "TO DO",
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white, // Text color
+                  ),
+                ),
+              ),
+            ],
+          
+      ),
+     ),
+      )
+            ],
+           
+        )
+        ),
           ],
           
         ),
